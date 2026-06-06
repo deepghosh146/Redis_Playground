@@ -1,0 +1,12 @@
+services:
+  redis:
+    image: redis:8.8-trixie
+    container_name: redis_playground
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
