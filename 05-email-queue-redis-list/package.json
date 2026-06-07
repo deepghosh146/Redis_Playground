@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Redis Playground",
     "type": "module",
-    "main": "src/03-site-banner/index.js",
+    "main": "src/index.js",
     "scripts": {
         "start": "node --env-file=.env ./src/index.js",
         "dev": "nodemon --env-file=.env ./src/index.js"
