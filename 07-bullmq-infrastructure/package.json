@@ -1,0 +1,27 @@
+{
+    "name": "redis-playground",
+    "version": "1.0.0",
+    "description": "Redis Playground",
+    "type": "module",
+    "main": "src/api.js",
+    "scripts": {
+        "start": "node --env-file=.env ./src/api.js",
+        "dev": "nodemon --env-file=.env ./src/api.js",
+        "worker": "node --env-file=.env ./src/worker.js",
+        "worker:dev": "nodemon --env-file=.env ./src/worker.js"
+    },
+    "keywords": [
+        "redis",
+        "playground"
+    ],
+    "author": "Deep",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^5.2.1",
+        "ioredis": "^5.11.0",
+        "bullmq": "^5.78.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.14"
+    }
+}
